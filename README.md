@@ -1,1 +1,12 @@
-# NCKU-AI-Course
+# NCKU-AI-Course_Front-End-Project
+
+Frameworks and Resources used in this front end project:
+
+Bootstrap 4
+
+Radar Chart / Charts (Chart.js)
+http://www.chartjs.org/docs/latest/charts/radar.html
+
+
+
+
