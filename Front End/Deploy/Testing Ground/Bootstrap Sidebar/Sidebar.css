@@ -10,7 +10,7 @@
     top: 0;
     left: 0;
     /* top layer */
-    z-index: 9999;
+    z-index: 3;
 }
 
 .overlay {
@@ -24,7 +24,7 @@
     left: 0;
     display: none;
     /* middle layer, i.e. appears below the sidebar */
-    z-index: 9998;
+    z-index: 2;
 }
 
 #dismiss {
