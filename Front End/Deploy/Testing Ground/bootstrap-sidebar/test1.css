@@ -2,7 +2,7 @@
     DEMO STYLE
 */
 @import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
-
+@import url("https://use.fontawesome.com/releases/v5.0.12/css/all.css"); /* FA CSS import */
 
 body {
     font-family: 'Poppins', sans-serif;
@@ -132,7 +132,18 @@ a[data-toggle="collapse"] {
 a[aria-expanded="false"]::before, a[aria-expanded="true"]::before {
     /*https://stackoverflow.com/questions/29653474/fontawesome-unicodes-dont-seem-to-work*/
     /*https://stackoverflow.com/questions/47712987/font-awesome-5-on-pseudo-elements*/
+    /* >> Symbol you want to use: */
     content: '\f0d7';
+    /*content: '\f13a';*/
+    /* >> Name of the FA free font (mandatory)
+               - 'Font Awesome 5 Free' for Regular and Solid symbols;
+               - 'Font Awesome 5 Brand' for Brands symbols. */
+    font-family: 'Font Awesome 5 Free';
+    /* >> Weight of the font (mandatory)
+               - 400 for Regular and Brands symbols;
+               - 900 for Solid symbols. */
+    font-weight: 900;
+    /* >> Optional styling: */
     display: block;
     position: absolute;
     right: 20px;
@@ -141,7 +152,8 @@ a[aria-expanded="false"]::before, a[aria-expanded="true"]::before {
     font-size: 0.6em;
 }
 a[aria-expanded="true"]::before {
-    content: '\e260';
+    content: '\f0d8';
+    /*content: '\f139';*/
 }
 
 
