@@ -30,12 +30,13 @@ a, a:hover, a:focus {
     border-radius: 0;
     margin-bottom: 40px;
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
-}
+}*/
 
 .navbar-btn {
     box-shadow: none;
     outline: none !important;
     border: none;
+    background-color: #33c5df;
 }
 
 .line {
@@ -189,6 +190,7 @@ a.article, a.article:hover {
 ----------------------------------------------------- */
 #content {
     width: 100%;
+    /* Padding controls the blank edge of the website */
     padding: 20px;
     min-height: 100vh;
     transition: all 0.3s;
