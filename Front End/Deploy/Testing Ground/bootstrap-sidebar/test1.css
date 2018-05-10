@@ -130,6 +130,7 @@ a[data-toggle="collapse"] {
 }
 
 a[aria-expanded="false"]::before, a[aria-expanded="true"]::before {
+    /*https://stackoverflow.com/questions/29653474/fontawesome-unicodes-dont-seem-to-work*/
     content: '\f0d7';
     display: block;
     position: absolute;
