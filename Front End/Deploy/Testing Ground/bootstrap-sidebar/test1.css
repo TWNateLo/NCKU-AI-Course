@@ -131,6 +131,7 @@ a[data-toggle="collapse"] {
 
 a[aria-expanded="false"]::before, a[aria-expanded="true"]::before {
     /*https://stackoverflow.com/questions/29653474/fontawesome-unicodes-dont-seem-to-work*/
+    /*https://stackoverflow.com/questions/47712987/font-awesome-5-on-pseudo-elements*/
     content: '\f0d7';
     display: block;
     position: absolute;
