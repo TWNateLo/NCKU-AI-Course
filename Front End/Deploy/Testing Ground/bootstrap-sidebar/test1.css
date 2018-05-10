@@ -130,11 +130,12 @@ a[data-toggle="collapse"] {
 }
 
 a[aria-expanded="false"]::before, a[aria-expanded="true"]::before {
-    content: '\e259';
+    content: '\f0d7';
     display: block;
     position: absolute;
     right: 20px;
-    font-family: 'Glyphicons Halflings';
+    /*font-family: 'Glyphicons Halflings';*/
+    font-family: 'FontAwesome';
     font-size: 0.6em;
 }
 a[aria-expanded="true"]::before {
