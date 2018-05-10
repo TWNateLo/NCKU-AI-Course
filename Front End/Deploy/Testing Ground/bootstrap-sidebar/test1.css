@@ -149,7 +149,7 @@ a[aria-expanded="false"]::before, a[aria-expanded="true"]::before {
     right: 20px;
     /*font-family: 'Glyphicons Halflings';*/
     font-family: 'Font Awesome 5 Free';
-    font-size: 0.6em;
+    font-size: 0.8em;
 }
 a[aria-expanded="true"]::before {
     content: '\f0d8';
