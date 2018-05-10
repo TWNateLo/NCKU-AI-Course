@@ -137,7 +137,7 @@ a[aria-expanded="false"]::before, a[aria-expanded="true"]::before {
     position: absolute;
     right: 20px;
     /*font-family: 'Glyphicons Halflings';*/
-    font-family: 'FontAwesome';
+    font-family: "Font Awesome 5 Brands";
     font-size: 0.6em;
 }
 a[aria-expanded="true"]::before {
