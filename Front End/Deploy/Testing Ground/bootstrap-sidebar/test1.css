@@ -50,7 +50,10 @@ a, a:hover, a:focus {
 }
 
 
-/* Custom Buttons Area */
+
+/* ---------------------------------------------------
+    Custom Buttons Area
+----------------------------------------------------- */
 .btn-nav {
   outline: none !important;
   border: 2px solid #fff;
@@ -86,7 +89,9 @@ a, a:hover, a:focus {
 .show > .btn-nav.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.2rem rgba(23, 162, 184, 0.5);
 }
-/* /Custom Buttons Area */
+/* ---------------------------------------------------
+    //Custom Buttons Area
+----------------------------------------------------- */
 
 
 
