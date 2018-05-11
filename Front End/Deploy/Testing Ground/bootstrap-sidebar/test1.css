@@ -63,12 +63,13 @@ a, a:hover, a:focus {
 
 .btn-nav:hover {
   color: #fff;
-  background-color: #138496;
-  border-color: #117a8b;
+  background-color: #7FCDE2;
+  border-color: #d9f7ff;
+  box-shadow: 0 0 20px 0.2rem rgba(136, 136, 136, 1);
 }
 
 .btn-nav:focus, .btn-nav.focus {
-  box-shadow: 0 0 0 0.2rem rgba(23, 162, 184, 0.5);
+  box-shadow: 0 0 7px 0.2rem rgba(133, 133, 133, 0.35);
 }
 
 .btn-nav.disabled, .btn-nav:disabled {
@@ -80,13 +81,13 @@ a, a:hover, a:focus {
 .btn-nav:not(:disabled):not(.disabled):active, .btn-nav:not(:disabled):not(.disabled).active,
 .show > .btn-nav.dropdown-toggle {
   color: #fff;
-  background-color: #117a8b;
-  border-color: #10707f;
+  background-color: #6db1c3;
+  border-color: #d9f7ff;
 }
 
 .btn-nav:not(:disabled):not(.disabled):active:focus, .btn-nav:not(:disabled):not(.disabled).active:focus,
 .show > .btn-nav.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem rgba(23, 162, 184, 0.5);
+  box-shadow: 0 0 7px 0.2rem rgba(133, 133, 133, 0.35);
 }
 /* ---------------------------------------------------
     //Custom Buttons Area
