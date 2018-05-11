@@ -25,10 +25,12 @@ a, a:hover, a:focus {
 
 .navbar {
     padding: 15px 10px;
-    background: #fff;
-    border: none;
-    border-radius: 0;
-    margin-bottom: 20px;
+    background: #7FCDE2;
+    /*border: none;*/
+    border: 3px solid #fff;
+    border-radius: 10px;
+    margin: 15px 15px 15px 15px;
+    /*margin-bottom: 15px;*/
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
 }
 
@@ -51,7 +53,7 @@ a, a:hover, a:focus {
 /* Custom Buttons Area */
 .btn-nav {
   outline: none !important;
-  border: none;
+  border: 2px solid #fff;
   color: #fff;
   background-color: #7FCDE2;
   /*border-color: #17a2b8;*/
@@ -64,6 +66,24 @@ a, a:hover, a:focus {
 }
 
 .btn-nav:focus, .btn-nav.focus {
+  box-shadow: 0 0 0 0.2rem rgba(23, 162, 184, 0.5);
+}
+
+.btn-nav.disabled, .btn-nav:disabled {
+  color: #fff;
+  background-color: #17a2b8;
+  border-color: #17a2b8;
+}
+
+.btn-nav:not(:disabled):not(.disabled):active, .btn-nav:not(:disabled):not(.disabled).active,
+.show > .btn-nav.dropdown-toggle {
+  color: #fff;
+  background-color: #117a8b;
+  border-color: #10707f;
+}
+
+.btn-nav:not(:disabled):not(.disabled):active:focus, .btn-nav:not(:disabled):not(.disabled).active:focus,
+.show > .btn-nav.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.2rem rgba(23, 162, 184, 0.5);
 }
 /* /Custom Buttons Area */
@@ -222,3 +242,9 @@ a.article, a.article:hover {
     top: 0;
     right: 0;
 }
+
+/*Using Media Query to adjut content padding dynamically*/
+/* https://bootstrapcreative.com/bootstrap-4-media-queries/ */
+
+
+/**/
