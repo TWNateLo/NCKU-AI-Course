@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background: #fafafa;
+    background: #7FCDE2;
 }
 
 p {
@@ -30,13 +30,13 @@ a, a:hover, a:focus {
     border-radius: 0;
     margin-bottom: 40px;
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
-}*/
+}
 
 .navbar-btn {
     box-shadow: none;
     outline: none !important;
     border: none;
-    background-color: #33c5df;
+    background-color: #7FCDE2;
 }
 
 .line {
