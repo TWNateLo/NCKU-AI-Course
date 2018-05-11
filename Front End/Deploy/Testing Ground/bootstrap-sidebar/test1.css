@@ -14,7 +14,7 @@ p {
     font-size: 1.1em;
     font-weight: 300;
     line-height: 1.7em;
-    color: #999;
+    color: #ffffff;
 }
 
 a, a:hover, a:focus {
@@ -50,9 +50,11 @@ a, a:hover, a:focus {
 
 /* Custom Buttons Area */
 .btn-nav {
+  outline: none !important;
+  border: none;
   color: #fff;
   background-color: #7FCDE2;
-  border-color: #17a2b8;
+  /*border-color: #17a2b8;*/
 }
 
 .btn-nav:hover {
