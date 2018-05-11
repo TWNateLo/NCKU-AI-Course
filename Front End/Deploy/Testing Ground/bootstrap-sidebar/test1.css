@@ -65,7 +65,7 @@ a, a:hover, a:focus {
   color: #fff;
   background-color: #7FCDE2;
   border-color: #d9f7ff;
-  box-shadow: 0 0 20px 0.2rem rgba(136, 136, 136, 1);
+  box-shadow: 0px 0px 100px 0.1px rgba(50, 50, 50,0.67);
 }
 
 .btn-nav:focus, .btn-nav.focus {
@@ -81,7 +81,7 @@ a, a:hover, a:focus {
 .btn-nav:not(:disabled):not(.disabled):active, .btn-nav:not(:disabled):not(.disabled).active,
 .show > .btn-nav.dropdown-toggle {
   color: #fff;
-  background-color: #6db1c3;
+  background-color: #78c2d6;
   border-color: #d9f7ff;
 }
 
