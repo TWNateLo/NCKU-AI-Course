@@ -47,6 +47,17 @@
             </div>
           </div>
 
+<!-- Force user to select valid options -->
+<!--https://stackoverflow.com/questions/19933573/how-to-force-a-user-to-choose-a-select-option-with-bootstrap-->
+<!--https://www.w3schools.com/tags/att_select_required.asp-->
+          <div class="form-group form-label-group">
+              <select id="inputState" class="form-control">
+                <option value="" selected>Please Select Gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+              </select>
+          </div>
+
 
       <div class="form-label-group">
         <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required="">
