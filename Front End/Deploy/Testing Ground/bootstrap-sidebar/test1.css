@@ -301,26 +301,51 @@ a.article, a.article:hover {
 
 @media (min-width: 576px) {
   .chick{
-      width: 60%;
+      max-height: 25vh;
+      width: auto;
   }
 }
 
 @media (min-width: 768px) {
   .chick{
-      width: 50%;
+      max-height: 35vh;
+      width: auto;
   }
 }
 
 @media (min-width: 992px) {
   .chick{
-      width: 45%;
+      max-height: 45vh;
+      width: auto;
   }
 }
 
 @media (min-width: 1200px) {
   .chick{
-      width: 40%;
+      max-height: 55vh;
+      width: auto;
   }
 }
 
+/*
+.chickt{
+  display: block;
+  max-height: 60vh;
+  width: auto;
+}
+*/
+
 /* --------------------   //Chick    -------------------- */
+
+/* --------------------    textbox    -------------------- */
+.textbox{
+    margin: 15px 20px 0px 20px;
+    padding: 0px;
+
+    width: 100%;
+    max-width: 420px;
+    padding: 15px;
+    margin: 0 auto;
+
+}
+/* --------------------   //textbox    -------------------- */
