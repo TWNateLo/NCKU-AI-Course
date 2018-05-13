@@ -292,6 +292,18 @@ a.article, a.article:hover {
     CONTENT
 ----------------------------------------------------- */
 
+/* --------------------   Emotion    -------------------- */
+.emotion{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 1.7em;
+    color: #ffffff;
+    margin: 0px;
+}
+
+/* --------------------   //Emotion    -------------------- */
+
 /* --------------------    Chick    -------------------- */
 
 .chick{
