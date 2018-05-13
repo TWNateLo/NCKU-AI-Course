@@ -293,9 +293,34 @@ a.article, a.article:hover {
 ----------------------------------------------------- */
 
 /* --------------------    Chick    -------------------- */
+
 .chick{
     margin: 15px 15px 15px 15px;
-    width: 150px;
-    height: 150px;
+    width: 90%;
 }
+
+@media (min-width: 576px) {
+  .chick{
+      width: 60%;
+  }
+}
+
+@media (min-width: 768px) {
+  .chick{
+      width: 50%;
+  }
+}
+
+@media (min-width: 992px) {
+  .chick{
+      width: 45%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .chick{
+      width: 40%;
+  }
+}
+
 /* --------------------   //Chick    -------------------- */
