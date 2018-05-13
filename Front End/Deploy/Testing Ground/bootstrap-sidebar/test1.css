@@ -302,6 +302,23 @@ a.article, a.article:hover {
     margin: 0px;
 }
 
+.emotion-icon{
+  /*content: '\f0d7';*/
+  /*content: '\f13a';*/
+  /* >> Name of the FA free font (mandatory)
+             - 'Font Awesome 5 Free' for Regular and Solid symbols;
+             - 'Font Awesome 5 Brand' for Brands symbols. */
+  font-family: 'Font Awesome 5 Free';
+  /* >> Weight of the font (mandatory)
+             - 400 for Regular and Brands symbols;
+             - 900 for Solid symbols. */
+  font-weight: 900;
+  /* >> Optional styling: */
+  /*font-family: 'Glyphicons Halflings';*/
+  font-family: 'Font Awesome 5 Free';
+  font-size: 0.8em;
+}
+
 /* --------------------   //Emotion    -------------------- */
 
 /* --------------------    Chick    -------------------- */
