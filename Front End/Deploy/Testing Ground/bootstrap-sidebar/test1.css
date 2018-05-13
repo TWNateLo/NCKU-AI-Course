@@ -35,17 +35,37 @@ a, a:hover, a:focus {
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
 }
 
+
+/* ---------------------------------------------------
+    Nav-brand-thingy
+----------------------------------------------------- */
+
 .nav-brand-size {
     width: 60px !important;
 }
 
+/* --------------------    Nav-Brand-Centering    -------------------- */
 
 .navbar-brand-centered {
     position: absolute;
-    left: 45%;
+    left: 40%;
     display: block;
     text-align: center;
 }
+
+@media (min-width: 576px) {
+  .navbar-brand-centered {
+      left: 45%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .navbar-brand-centered {
+      left: 45%;
+  }
+}
+
+/* -------------------    //Nav-Brand-Centering    ------------------- */
 
 /*
 .navbar-btn {
