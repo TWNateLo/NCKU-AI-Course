@@ -295,6 +295,7 @@ a.article, a.article:hover {
 /* --------------------    Chick    -------------------- */
 .chick{
     margin: 15px 15px 15px 15px;
-    width: 100px;
+    width: 150px;
+    height: 150px;
 }
 /* --------------------   //Chick    -------------------- */
