@@ -7,6 +7,17 @@
 	  <meta name="author" content="">
 	  <link rel="icon" href="./image/favicon.ico">
     <title>Add Member</title>
+		<!-- Bootstrap core CSS -->
+		<link href="./css/bootstrap.min.css" rel="stylesheet">
+
+		<!-- Custom styles for this template -->
+		<link href="./css/floating-labels.css" rel="stylesheet">
+
+		<script type="text/javascript" src="./js/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript" src="./js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="./js/popper.min.js"></script>
+		<script type="text/javascript" src="./js/tooltip.min.js"></script>
+		<script type="text/javascript" src="./js/bootstrap.bundle.min.js"></script>
 
 
     <style>
@@ -83,13 +94,18 @@
 		}
 ?>
 
+<div class="container-fluid">
+
+	<div class="row" style="width: 100%; max-width: 600px; margin: 0 auto;">
+	<div class="col">
+	<div class="col-12 text-center">
 	<h3><p style="display: inline;"><?php echo $firstname." "  ;?></p>您註冊的資料如下</h3>
 
-	<table>
+	<table class="table table-hover">
 	  <tr>
-	    <th>Gender</th>
-	    <th>Email</th>
-	    <th>Password</th>
+	    <th scope="col">Gender</th>
+	    <th scope="col">Email</th>
+	    <th scope="col">Password</th>
 	  </tr>
 	  <tr>
 	    <td><?php echo $gender ?></td>
@@ -97,5 +113,11 @@
 	    <td><?php echo $passwd ?></td>
 	  </tr>
 	</table>
+
+</div></div></div>
+
+
+</div>
+
 </body>
 </html>
