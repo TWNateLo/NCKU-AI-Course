@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en" class="gr__getbootstrap_com">
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta name="description" content="">
-    <meta name="author" content="">
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	  <meta name="description" content="">
+	  <meta name="author" content="">
+	  <link rel="icon" href="./image/favicon.ico">
     <title>Add Member</title>
 
-    
+
     <style>
     	/*CSS for user data table*/
 		table {
@@ -32,10 +34,10 @@
 		// Get Form data
 		$firstname = $_POST["firstname"];
 		$lastname = $_POST["lastname"];
-		$email = $_POST["inputEmail"]; 
-	    $passwd = $_POST["inputPassword"]; 
+		$email = $_POST["inputEmail"];
+	    $passwd = $_POST["inputPassword"];
 	    $confirm_passwd = $_POST["inputCPassword"];
-	    $gender = $_POST["inputState"]; 
+	    $gender = $_POST["inputState"];
 		$is_usertype = false;
 		$score = 0;
 		$lv = 0;
@@ -44,7 +46,7 @@
 			echo "您輸入的密碼不相同 請回上頁重新註冊";
 		}
 		else{
-			echo "您好: "."$firstname"."<br>";	
+			echo "您好: "."$firstname"."<br>";
 			$is_usertype = true;
 
 			// Connect database
@@ -54,7 +56,7 @@
 			$password = "";
 			$dbname = "aicourse";
 
-	  	    // Check connection 	   
+	  	    // Check connection
 	        $conn = create_connection($servername, $username, $password, $dbname);
 
 	        //Check whether there is same account name
@@ -83,7 +85,7 @@
 ?>
 
 	<h3><p style="display: inline;"><?php echo $firstname." "  ;?></p>您註冊的資料如下</h3>
-	
+
 	<table>
 	  <tr>
 	    <th>Gender</th>
