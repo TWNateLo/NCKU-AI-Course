@@ -91,7 +91,7 @@
 
 
       <div class="text-center mb-4">
-        <img class="mb-4" src="./image/chick.svg" alt="" width="100" height="100">
+        <img class="" src="./image/chick.svg" alt="" width="100" height="100">
       </div>
 
       <div class="form-label-group">
