@@ -92,7 +92,6 @@
 
       <div class="text-center mb-4">
         <img class="mb-4" src="./image/chick.svg" alt="" width="100" height="100">
-        <h1 class="h3 mb-3 font-weight-normal white-font"><b>Sign In</b></h1>
       </div>
 
       <div class="form-label-group">
