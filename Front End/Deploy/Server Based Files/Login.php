@@ -1,16 +1,16 @@
-<?php 
-      $error = "";     
+<?php
+      $error = "";
       // check submit value
       if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-        $email = $_POST["inputEmail"]; 
-        $passwd = $_POST["inputPassword"]; 
+        $email = $_POST["inputEmail"];
+        $passwd = $_POST["inputPassword"];
         //Connect to database
         include_once("dbtool.inc");
         $servername = "localhost";
         $username = "aicourse";
         $password = "";
         $dbname = "aicourse";
-        // Check connection      
+        // Check connection
         $conn = create_connection($servername, $username, $password, $dbname);
 
         //Check whether there is same account name
@@ -19,9 +19,9 @@
 
         //there is not such an account
         if($result->num_rows ==0){
-          $error =  "抱歉 無此使用者 請點上方連結註冊";
+          $error =  "抱歉 無此使用者 請點下方連結註冊";
           //Release memory
-          mysqli_free_result($result);     
+          mysqli_free_result($result);
       }
         else{
 
@@ -30,7 +30,7 @@
             if($passwd!=$row['Password']){
               $error = "密碼錯誤!";
               //Release memory
-              mysqli_free_result($result);     
+              mysqli_free_result($result);
             }
             else{
               // Send account and password to index.php through cookie
@@ -44,7 +44,7 @@
         $conn->close();
       }
      $jsonError = json_encode($error);
-    ?>   
+    ?>
 <!DOCTYPE html>
 <!-- saved from url=(0059)https://getbootstrap.com/docs/4.0/examples/floating-labels/ -->
 <html lang="en" class="gr__getbootstrap_com"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -83,12 +83,12 @@
 
       <script type="text/javascript">
       var error = <?php echo $jsonError ?>;
-      var x = document.getElementById("Error"); 
+      var x = document.getElementById("Error");
       //Check error existence and adjust display style
       if(error)x.style.display = "block";
       else x.style.display = "none";
       </script>
-     
+
 
       <div class="text-center mb-4">
         <img class="mb-4" src="./image/chick.svg" alt="" width="100" height="100">
