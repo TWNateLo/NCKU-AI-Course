@@ -96,9 +96,9 @@
 
 <div class="container-fluid form-signin">
 
-	<div class="row" style="width: 100%; max-width: 600px; margin: 0 auto;">
+	<div class="row">
 	<div class="col">
-	<div class="col-12 text-center">
+	<div class="col-12 text-center white-font">
 	<h3><p style="display: inline;"><?php echo $firstname." "  ;?></p>您註冊的資料如下</h3>
 
 	<table class="table table-hover">
