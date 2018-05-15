@@ -112,12 +112,11 @@
             </label>
           </div>
         </div>
-
         <div class="col text-right">
           <a class="mb-3 text-muted" href="#" style="font-size: 0.95rem;">Forgot Password?</a>
         </div>
       </div>
-      
+
       <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
       <a href="SignUp.html" class="btn btn-lg btn-outline-secondary btn-block" role="button">Sign up</a>
       <p class="mt-4 mb-3 text-muted text-center">© 2017-2018</p>
