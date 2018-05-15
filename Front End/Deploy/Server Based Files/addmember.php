@@ -94,7 +94,7 @@
 		}
 ?>
 
-<div class="container-fluid">
+<div class="container-fluid form-signin">
 
 	<div class="row" style="width: 100%; max-width: 600px; margin: 0 auto;">
 	<div class="col">
