@@ -6,7 +6,7 @@
     header("Location: Startup.php");
     exit();
   }
-  
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -26,7 +26,7 @@
         <!-- Scrollbar Custom CSS -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
         <!-- icon -->
-        <link rel="icon" href="image/chickvago.png" type="image/x-icon">
+        <link rel="icon" href="image/favicon.ico">
         <!-- Font Awesome 5 CSS Version -->
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
 
@@ -80,6 +80,7 @@
 
 
               <!-- Top Nav Bar + Toggle Button -->
+              <div class="container-fluid navbar-wrapper">
                 <nav class="navbar navbar-default">
 
                   <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn btn-nav">
@@ -92,6 +93,7 @@
 
 
                 </nav>
+              </div>
               <!-- /Top Nav Bar + Toggle Button -->
 
 <!------------------------------------------------------>
@@ -101,7 +103,7 @@
                 <!-- Weather & Emotion (Together in one parallel row for now) -->
                 <div class="container-fluid">
 
-                  <div class="row">
+                  <div class="row div-width">
                     <div class="col" style="background-color:lavender;">.weather</div>
                     <div class="col" style="background-color:orange;">
                     <!-- How to use Font Awesome in the p tag  -->
@@ -116,12 +118,12 @@
                             if ($_SERVER['REQUEST_METHOD'] === 'POST'){
                             //Get sentence from user
                             $sentence = $_POST["Sentence"];
-                                
+
                             //execute python
                             $result = shell_exec("python NLP_V2.py $email $sentence");
                             echo $result;
                             }
-                         ?> 
+                         ?>
                      </i>
                       <!-- P tag unicode version of FA icons -->
                       <!--
@@ -160,8 +162,7 @@
                     <div class="form-group">
                       <textarea class="form-control" name="Sentence" rows="3" form="SentenceToChick" placeholder="Say something to me!" required></textarea>
                       <button class="btn btn-primary btn-block" type="submit">
-                        Send <i class="fas fa-paper-plane">
-                        </i>
+                        Send <i class="fas fa-paper-plane"></i>
                         <!--Send <i class="far fa-paper-plane"></i> -->
                       </button>
                     </div>
