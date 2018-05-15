@@ -1,0 +1,221 @@
+<?php
+  // Check cookie if $pass is true or not in login.php
+  $passed = $_COOKIE["passed"];
+  $email = $_COOKIE["email"];
+  if($passed!="TRUE"){
+    header("Location: Startup.php");
+    exit();
+  }
+  
+?>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <title>Chickvago</title>
+
+        <!-- Bootstrap CSS CDN -->
+        <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+
+        <!-- Our Custom CSS -->
+        <link rel="stylesheet" href="./css/Main.css">
+        <!-- Scrollbar Custom CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+        <!-- icon -->
+        <link rel="icon" href="image/chickvago.png" type="image/x-icon">
+        <!-- Font Awesome 5 CSS Version -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+
+    </head>
+    <body>
+
+        <div class="wrapper">
+            <!-- Sidebar Holder -->
+            <nav id="sidebar">
+                <div id="dismiss">
+                    <i class="fas fa-times"></i>
+                </div>
+
+                <div class="sidebar-header">
+                    <h3>Chickvago</h3>
+                </div>
+
+                <ul class="list-unstyled">
+                <!--<ul class="list-unstyled components"> -->
+                    <p>Dummy Heading</p>
+                    <li class="active">
+                        <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">Home</a>
+                        <ul class="collapse list-unstyled" id="homeSubmenu">
+                            <li><a href="#">Home 1</a></li>
+                            <li><a href="#">Home 2</a></li>
+                            <li><a href="#">Home 3</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">About</a>
+                        <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">Pages</a>
+                        <ul class="collapse list-unstyled" id="pageSubmenu">
+                            <li><a href="#">Page 1</a></li>
+                            <li><a href="#">Page 2</a></li>
+                            <li><a href="#">Page 3</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+
+            </nav>
+
+            <!-- Page Content Holder -->
+            <div id="content">
+
+
+
+              <!-- Top Nav Bar + Toggle Button -->
+                <nav class="navbar navbar-default">
+
+                  <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn btn-nav">
+                    <i class="fas fa-bars"></i>
+                    <span></span>
+                  </button>
+                  <a class="navbar-brand mx-auto navbar-brand-centered" href="#">
+                    <img class="nav-brand-size" src="./image/chick.svg" alt="Logo">
+                  </a>
+
+
+                </nav>
+              <!-- /Top Nav Bar + Toggle Button -->
+
+<!------------------------------------------------------>
+<!------------------------ CONTENT --------------------->
+<!------------------------------------------------------>
+
+                <!-- Weather & Emotion (Together in one parallel row for now) -->
+                <div class="container-fluid">
+
+                  <div class="row">
+                    <div class="col" style="background-color:lavender;">.weather</div>
+                    <div class="col" style="background-color:orange;">
+                    <!-- How to use Font Awesome in the p tag  -->
+                    <!--
+                         http://jsfiddle.net/allcaps/gA4rx/
+                         https://stackoverflow.com/questions/19285640/font-awesome-icon-inside-text-input-element
+                    -->
+                      <p class="emotion">.emotion</p>
+                      <i>
+                       <?php
+                            //check Submit value
+                            if ($_SERVER['REQUEST_METHOD'] === 'POST'){
+                            //Get sentence from user
+                            $sentence = $_POST["Sentence"];
+                                
+                            //execute python
+                            $result = shell_exec("python NLP_V2.py $email $sentence");
+                            echo $result;
+                            }
+                         ?> 
+                     </i>
+                      <!-- P tag unicode version of FA icons -->
+                      <!--
+                      <p class="emotion emotion-icon">&#xf118;</p>
+                      <p class="emotion emotion-icon">&#xf119;</p>
+                      -->
+                      <!-- additional-styling -->
+                      <!-- https://fontawesome.com/how-to-use/web-fonts-with-css#additional-styling -->
+                      <i class="far fa-smile"></i> <i class="far fa-frown"></i>
+                    </div>
+                  </div>
+
+                </div>
+
+
+                <!-- Chcik -->
+                <div class="container-fluid">
+
+                  <div class="row">
+                    <div class="col">
+                      <div class="col-12">
+                        <!-- This is the way to center a div/image -->
+                        <!-- https://www.codeply.com/go/SOSvvKpLOc -->
+                        <img class="chick mx-auto d-block" src="./image/Chick-Big.svg" alt="Chick"/>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+
+                <!-- Textbox -->
+                <div class="container-fluid">
+
+                  <form class="textbox" id="SentenceToChick" action="index.php" method ="POST">
+                    <div class="form-group">
+                      <textarea class="form-control" name="Sentence" rows="3" form="SentenceToChick" placeholder="Say something to me!" required></textarea>
+                      <button class="btn btn-primary btn-block" type="submit">
+                        Send <i class="fas fa-paper-plane">
+                        </i>
+                        <!--Send <i class="far fa-paper-plane"></i> -->
+                      </button>
+                    </div>
+
+                  </form>
+
+                </div>
+
+            </div>
+
+<!-- //CONTENT -->
+
+
+        <div class="overlay"></div>
+
+
+        <!-- jQuery CDN -->
+        <!--<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <!-- Bootstrap Js CDN -->
+        <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+
+        <!-- jQuery Custom Scroller CDN -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+
+        <!-- Font Awesome 5 JS SVG Version -->
+        <script defer src="https://use.fontawesome.com/releases/v5.0.12/js/all.js" integrity="sha384-Voup2lBiiyZYkRto2XWqbzxHXwzcm4A5RfdfG6466bu5LqjwwrjXCMBQBLMWh7qR" crossorigin="anonymous"></script>
+
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $("#sidebar").mCustomScrollbar({
+                    theme: "minimal"
+                });
+
+                $('#dismiss, .overlay').on('click', function () {
+                    $('#sidebar').removeClass('active');
+                    $('.overlay').fadeOut();
+                });
+
+                $('#sidebarCollapse').on('click', function () {
+                    $('#sidebar').addClass('active');
+                    $('.overlay').fadeIn();
+                    $('.collapse.in').toggleClass('in');
+                    $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+                });
+            });
+            /*window.FontAwesomeConfig = {
+              searchPseudoElements: true
+            }*/
+        </script>
+    </body>
+</html>
