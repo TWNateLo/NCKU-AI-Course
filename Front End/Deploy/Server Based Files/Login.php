@@ -95,12 +95,12 @@
       </div>
 
       <div class="form-label-group">
-        <input type="email" name="inputEmail" id = "inputEmail"  class="form-control" placeholder="Email address"  required="" autofocus="">
+        <input type="email" name="inputEmail" id = "inputEmail"  class="form-control" placeholder="Email address"  required="" autofocus="" maxlength="30">
         <label for="inputEmail">Email address</label>
       </div>
 
       <div class="form-label-group">
-        <input type="password" name="inputPassword" id="inputPassword"  placeholder="Password" class="form-control" required="">
+        <input type="password" name="inputPassword" id="inputPassword"  placeholder="Password" class="form-control" required="" maxlength="8">
         <label for="inputPassword">Password</label>
       </div>
 
