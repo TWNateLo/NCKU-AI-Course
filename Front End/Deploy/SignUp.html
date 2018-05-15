@@ -28,52 +28,42 @@
   <style></style></head>
 
   <body data-gr-c-s-loaded="true" style="">
-    <form class="form-signin">
+    <form class="form-signin" action="addmember.php" method="POST">
 
       <div class="text-center" style="margin: 1rem">
-        <img class="" src="./image/chick.svg" alt="" width="72" height="72">
+        <img src="./image/chick.svg" alt="" width="72" height="72">
       </div>
 
-
-        <div class="form-row">
-            <div class="col">
-              <div class="form-label-group">
-                <input type="text" id="FirstName" class="form-control" placeholder="First name" required="" autofocus="">
-                <label for="FirstName">First name</label>
-              </div>
-            </div>
-            <div class="col">
-              <div class="form-label-group">
-                <input type="text" id="LastName" class="form-control" placeholder="Last name" required="">
-                <label for="LastName">Last name</label>
-              </div>
-            </div>
+          <div class="form-label-group">
+              <input type="text" name="inputUsername" id="inputUsername"  placeholder="Username" class="form-control" required="" maxlength="30">
+              <label for="inputUsername">Username</label>
           </div>
+
+
 
 <!-- Force user to select valid options -->
 <!--https://stackoverflow.com/questions/19933573/how-to-force-a-user-to-choose-a-select-option-with-bootstrap-->
 <!--https://www.w3schools.com/tags/att_select_required.asp-->
-          <div class="form-group form-label-group">
-              <select id="inputState" class="form-control" required>
-                <option value="" selected>Please Select Gender</option>
-                <option value="Male">Male</option>
-                <option value="Female">Female</option>
-              </select>
-          </div>
-
+      <div class="form-group form-label-group">
+          <select name="inputState" class="form-control" required>
+             <option value="" selected>Please Select Gender</option>
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+          </select>
+      </div>
 
       <div class="form-label-group">
-        <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required="">
+        <input type="email" name="inputEmail" id="inputEmail"  placeholder="Email address" class="form-control" required="" maxlength="30">
         <label for="inputEmail">Email address</label>
       </div>
 
       <div class="form-label-group">
-        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required="">
+        <input type="password" name="inputPassword" id="inputPassword" placeholder="Password" class="form-control" required="" maxlength="8">
         <label for="inputPassword">Password</label>
       </div>
 
       <div class="form-label-group">
-        <input type="password" id="inputCPassword" class="form-control" placeholder="Confirm Password" required="">
+        <input type="password" name="inputCPassword" id = "inputCPassword" placeholder="Confirm password" class="form-control" required="" maxlength="8">
         <label for="inputCPassword">Confirm Password</label>
       </div>
 

@@ -113,6 +113,7 @@
 	    <td><?php echo $passwd ?></td>
 	  </tr>
 	</table>
+	<a href="./Login.php" class="btn btn-lg btn-primary btn-block" role="button">Return to Login</a>
 
 </div></div></div>
 
