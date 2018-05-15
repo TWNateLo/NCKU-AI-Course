@@ -33,6 +33,14 @@ a, a:hover, a:focus {
     margin: 15px 15px 15px 15px;
     /*margin-bottom: 15px;*/
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+    /*Test*/
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.navbar-wrapper {
+    padding: 15px;
 }
 
 
@@ -55,13 +63,13 @@ a, a:hover, a:focus {
 
 @media (min-width: 576px) {
   .navbar-brand-centered {
-      left: 45%;
+      left: 40%;
   }
 }
 
 @media (min-width: 1200px) {
   .navbar-brand-centered {
-      left: 48%;
+      left: 45%;
   }
 }
 
@@ -293,6 +301,12 @@ a.article, a.article:hover {
 ----------------------------------------------------- */
 
 /* --------------------   Emotion    -------------------- */
+.div-width {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
 .emotion{
     font-family: 'Poppins', sans-serif;
     font-size: 1.1em;
