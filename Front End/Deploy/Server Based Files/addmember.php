@@ -27,7 +27,6 @@
 		    background-color: #dddddd;
 		}
 </style>
-<link rel="icon" href="image/chickvago.png" type="image/x-icon">
 </head>
 <body>
 	<?php
