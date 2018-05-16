@@ -140,6 +140,17 @@ a, a:hover, a:focus {
 /* ---------------------------------------------------
     SIDEBAR STYLE
 ----------------------------------------------------- */
+
+/*Gender Icon in the sidebar*/
+
+.gender-icon{
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  font-family: 'Font Awesome 5 Free';
+  font-size: 0.8em;
+}
+/*Gender Icon in the sidebar*/
+
 #sidebar {
     width: 250px;
     position: fixed;

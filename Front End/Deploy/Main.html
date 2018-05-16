@@ -31,20 +31,24 @@
                 </div>
 
                 <div class="sidebar-header">
-                    <h3>Chickvago</h3>
+                    <!-- change to index.php if page is not index.php -->
+                    <a href="#" id="dismissT"><h3>Chickvago</h3></a>
                 </div>
 
                 <ul class="list-unstyled">
                 <!--<ul class="list-unstyled components"> -->
-                    <p>Dummy Heading</p>
+                    <p>Hi, #Username <span class="gender-icon">&#xf222; &#xf221;</span></p>
                     <li class="active">
-                        <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">Home</a>
-                        <ul class="collapse list-unstyled" id="homeSubmenu">
-                            <li><a href="#">Home 1</a></li>
-                            <li><a href="#">Home 2</a></li>
-                            <li><a href="#">Home 3</a></li>
-                        </ul>
+                        <a href="#">Portfolio</a>
                     </li>
+                    <li>
+                        <a href="#">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#">Tutorial</a>
+                    </li>
+                    <!-- collapse button template -->
+                    <!--
                     <li>
                         <a href="#">About</a>
                         <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">Pages</a>
@@ -54,12 +58,8 @@
                             <li><a href="#">Page 3</a></li>
                         </ul>
                     </li>
-                    <li>
-                        <a href="#">Portfolio</a>
-                    </li>
-                    <li>
-                        <a href="#">Contact</a>
-                    </li>
+                    -->
+                    <!-- collapse button template -->
                 </ul>
 
             </nav>
@@ -177,6 +177,11 @@
             $(document).ready(function () {
                 $("#sidebar").mCustomScrollbar({
                     theme: "minimal"
+                });
+
+                $('#dismissT, .overlay').on('click', function () {
+                    $('#sidebar').removeClass('active');
+                    $('.overlay').fadeOut();
                 });
 
                 $('#dismiss, .overlay').on('click', function () {
