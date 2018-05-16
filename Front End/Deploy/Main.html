@@ -72,12 +72,34 @@
                   <div class="container-fluid" style="position: fixed; top: 85%;">
                     <div class="row">
                       <div class="col" style="position: relative; max-width: 250px;">
-                        <button type="button" class="btn btn-secondary btn-block"><span class="gender-icon">&#xf2f5;</span> Logout</button>
+                        <button type="button" class="btn btn-secondary btn-block" data-toggle="modal" data-target="#LogoutModal"><span class="gender-icon">&#xf2f5;</span> Logout</button>
                       </div>
                     </div>
                   </div>
 
             </nav>
+          </div>
+
+
+          <!-- Modal --> <!-- Add background style in the first div can block all the things behind @Nate-->
+          <div class="modal fade" id="LogoutModal" tabindex="-1" role="dialog" aria-labelledby="LogoutModalTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content" style="background: #7FCDE2; color:#ffffff;">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="LogoutModalTitle">Logout</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true" style="color:#ffffff;">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  Are you sure that you want to logout?
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Back</button>
+                  <button type="button" class="btn btn-outline-danger"><strong>Logout</strong></button>
+                </div>
+              </div>
+            </div>
           </div>
 
             <!-- Page Content Holder -->
