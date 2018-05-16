@@ -152,7 +152,7 @@ a, a:hover, a:focus {
 /*Gender Icon in the sidebar*/
 
 /*for the logout button*/
-
+/*Now they are still in the style attributes in the index.php (or Main.html)*/
 /*for the logout button*/
 
 #sidebar {
@@ -162,7 +162,7 @@ a, a:hover, a:focus {
     left: -250px;
     height: 100vh;
     z-index: 999;
-    background: #7386D5;
+    background: #7FCDE2;
     color: #fff;
     transition: all 0.3s;
     overflow-y: scroll;
@@ -178,7 +178,7 @@ a, a:hover, a:focus {
     height: 35px;
     line-height: 35px;
     text-align: center;
-    background: #7386D5;
+    background: #7FCDE2;
     position: absolute;
     top: 10px;
     right: 10px;
@@ -189,7 +189,7 @@ a, a:hover, a:focus {
 }
 #dismiss:hover {
     background: #fff;
-    color: #7386D5;
+    color: #7FCDE2;
 }
 
 .overlay {
@@ -203,7 +203,7 @@ a, a:hover, a:focus {
 
 #sidebar .sidebar-header {
     padding: 20px;
-    background: #6d7fcc;
+    background: #6dbed4;
 }
 
 #sidebar ul.components {
@@ -228,7 +228,7 @@ a, a:hover, a:focus {
 
 #sidebar ul li.active > a, a[aria-expanded="true"] {
     color: #fff;
-    background: #6d7fcc;
+    background: #6dbed4;
 }
 
 
