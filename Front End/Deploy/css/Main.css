@@ -144,12 +144,16 @@ a, a:hover, a:focus {
 /*Gender Icon in the sidebar*/
 
 .gender-icon{
-  font-family: 'Font Awesome 5 Free';
-  font-weight: 900;
-  font-family: 'Font Awesome 5 Free';
-  font-size: 0.8em;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    font-family: 'Font Awesome 5 Free';
+    font-size: 0.8em;
 }
 /*Gender Icon in the sidebar*/
+
+/*for the logout button*/
+
+/*for the logout button*/
 
 #sidebar {
     width: 250px;
