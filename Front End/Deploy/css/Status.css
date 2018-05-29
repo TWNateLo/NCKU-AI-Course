@@ -396,12 +396,9 @@ a.article, a.article:hover {
 /* --------------------   //Chick    -------------------- */
 
 /* --------------------    textbox    -------------------- */
-.textbox{
+.Category{
 
-    width: 100%;
-    max-width: 420px;
-    padding: 0px 15px 5px 15px;
-    margin: 0 auto;
+    font-size: 10em;
 
 }
 /* --------------------   //textbox    -------------------- */

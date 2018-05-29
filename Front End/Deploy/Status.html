@@ -24,6 +24,29 @@
         <!-- Font Awesome 5 CSS Version -->
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
 
+        <!-- jQuery CDN -->
+        <!--<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <!-- Bootstrap Js CDN -->
+        <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+
+        <!-- jQuery Custom Scroller CDN -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+
+        <!-- Font Awesome 5 JS SVG Version -->
+        <script defer src="https://use.fontawesome.com/releases/v5.0.12/js/all.js" integrity="sha384-Voup2lBiiyZYkRto2XWqbzxHXwzcm4A5RfdfG6466bu5LqjwwrjXCMBQBLMWh7qR" crossorigin="anonymous"></script>
+
+        <!-- Chart.js -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.js"></script>
+
+
+
     </head>
     <body>
 
@@ -42,10 +65,10 @@
                 <ul class="list-unstyled">
                 <!--<ul class="list-unstyled components"> -->
                     <p style="margin-bottom: 0px;">Hi, #Username <span class="gender-icon">&#xf222; &#xf221;</span></p>
-                    <li class="active">
+                    <li>
                         <a href="#" id="dismissT">Chick</a>
                     </li>
-                    <li>
+                    <li class="active">
                         <a href="#">Status</a>
                     </li>
                     <li>
@@ -130,11 +153,11 @@
 
                 <!-- Weather & Emotion (Together in one parallel row for now) -->
                 <div class="container-fluid">
-
-                  <div class="row div-width">
-                    <div class="col-6" style="background-color:rgba(27, 207, 115, 0.69);">Category</div>
+                  <div class="row align-items-center div-width">
+                    <div class="col-6" style="background-color:rgba(27, 207, 115, 0.69);">
+                      <i class="far fa-smile mx-auto d-block Category" style="vertical-align: middle; display:inline; display:inline-table; display:inline-block;"></i>
+                    </div>
                     <div class="col-6">
-
                             <!-- This is the way to center a div/image -->
                             <!-- https://www.codeply.com/go/SOSvvKpLOc -->
                             <img class="chick mx-auto d-block" src="./image/Chick-Big.svg" alt="Chick"/>
@@ -148,20 +171,126 @@
                 <!-- Chcik -->
                 <div class="container-fluid">
 
-                  <!-- How to use Font Awesome in the p tag  -->
-                  <!--
-                       http://jsfiddle.net/allcaps/gA4rx/
-                       https://stackoverflow.com/questions/19285640/font-awesome-icon-inside-text-input-element
-                  -->
-                    <p class="emotion">.emotion</p>
-                    <!-- P tag unicode version of FA icons -->
-                    <!--
-                    <p class="emotion emotion-icon">&#xf118;</p>
-                    <p class="emotion emotion-icon">&#xf119;</p>
-                    -->
-                    <!-- additional-styling -->
-                    <!-- https://fontawesome.com/how-to-use/web-fonts-with-css#additional-styling -->
-                    <i class="far fa-smile"></i> <i class="far fa-frown"></i>
+                  <canvas id="canvas" width="540" height="270" class="chartjs-render-monitor" style="display: block; width: 540px; height: 270px;"></canvas>
+                  <script>
+                  		var randomScalingFactor = function() {
+                  			return Math.round(Math.random() * 100);
+                  		};
+
+                  		var color = Chart.helpers.color;
+                  		var config = {
+                  			type: 'radar',
+                  			data: {
+                  				labels: [['Eating', 'Dinner'], ['Drinking', 'Water'], 'Sleeping', ['Designing', 'Graphics'], 'Coding', 'Cycling', 'Running'],
+                  				datasets: [{
+                  					label: 'My First dataset',
+                  					backgroundColor: color(window.chartColors.red).alpha(0.2).rgbString(),
+                  					borderColor: window.chartColors.red,
+                  					pointBackgroundColor: window.chartColors.red,
+                  					data: [
+                  						randomScalingFactor(),
+                  						randomScalingFactor(),
+                  						randomScalingFactor(),
+                  						randomScalingFactor(),
+                  						randomScalingFactor(),
+                  						randomScalingFactor(),
+                  						randomScalingFactor()
+                  					]
+                  				}, {
+                  					label: 'My Second dataset',
+                  					backgroundColor: color(window.chartColors.blue).alpha(0.2).rgbString(),
+                  					borderColor: window.chartColors.blue,
+                  					pointBackgroundColor: window.chartColors.blue,
+                  					data: [
+                  						randomScalingFactor(),
+                  						randomScalingFactor(),
+                  						randomScalingFactor(),
+                  						randomScalingFactor(),
+                  						randomScalingFactor(),
+                  						randomScalingFactor(),
+                  						randomScalingFactor()
+                  					]
+                  				}]
+                  			},
+                  			options: {
+                  				legend: {
+                  					position: 'top',
+                  				},
+                  				title: {
+                  					display: true,
+                  					text: 'Chart.js Radar Chart'
+                  				},
+                  				scale: {
+                  					ticks: {
+                  						beginAtZero: true
+                  					}
+                  				}
+                  			}
+                  		};
+
+                  		window.onload = function() {
+                  			window.myRadar = new Chart(document.getElementById('canvas'), config);
+                  		};
+
+                  		document.getElementById('randomizeData').addEventListener('click', function() {
+                  			config.data.datasets.forEach(function(dataset) {
+                  				dataset.data = dataset.data.map(function() {
+                  					return randomScalingFactor();
+                  				});
+                  			});
+
+                  			window.myRadar.update();
+                  		});
+
+                  		var colorNames = Object.keys(window.chartColors);
+                  		document.getElementById('addDataset').addEventListener('click', function() {
+                  			var colorName = colorNames[config.data.datasets.length % colorNames.length];
+                  			var newColor = window.chartColors[colorName];
+
+                  			var newDataset = {
+                  				label: 'Dataset ' + config.data.datasets.length,
+                  				borderColor: newColor,
+                  				backgroundColor: color(newColor).alpha(0.2).rgbString(),
+                  				pointBorderColor: newColor,
+                  				data: [],
+                  			};
+
+                  			for (var index = 0; index < config.data.labels.length; ++index) {
+                  				newDataset.data.push(randomScalingFactor());
+                  			}
+
+                  			config.data.datasets.push(newDataset);
+                  			window.myRadar.update();
+                  		});
+
+                  		document.getElementById('addData').addEventListener('click', function() {
+                  			if (config.data.datasets.length > 0) {
+                  				config.data.labels.push('dataset #' + config.data.labels.length);
+
+                  				config.data.datasets.forEach(function(dataset) {
+                  					dataset.data.push(randomScalingFactor());
+                  				});
+
+                  				window.myRadar.update();
+                  			}
+                  		});
+
+                  		document.getElementById('removeDataset').addEventListener('click', function() {
+                  			config.data.datasets.splice(0, 1);
+                  			window.myRadar.update();
+                  		});
+
+                  		document.getElementById('removeData').addEventListener('click', function() {
+                  			config.data.labels.pop(); // remove the label first
+
+                  			config.data.datasets.forEach(function(dataset) {
+                  				dataset.data.pop();
+                  			});
+
+                  			window.myRadar.update();
+                  		});
+                  	</script>
+
 
                 </div>
 
@@ -175,22 +304,8 @@
         <div class="overlay"></div>
 
 
-        <!-- jQuery CDN -->
-        <!--<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>-->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-        <!-- Bootstrap Js CDN -->
-        <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
 
-        <!-- Popper JS -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
-
-        <!-- jQuery Custom Scroller CDN -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
-
-        <!-- Font Awesome 5 JS SVG Version -->
-        <script defer src="https://use.fontawesome.com/releases/v5.0.12/js/all.js" integrity="sha384-Voup2lBiiyZYkRto2XWqbzxHXwzcm4A5RfdfG6466bu5LqjwwrjXCMBQBLMWh7qR" crossorigin="anonymous"></script>
 
         <script type="text/javascript">
             $(document).ready(function () {
@@ -218,6 +333,9 @@
             /*window.FontAwesomeConfig = {
               searchPseudoElements: true
             }*/
+
+            /*Chart.JS*/
+
         </script>
     </body>
 </html>
