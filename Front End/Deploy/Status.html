@@ -184,9 +184,20 @@
                       }]
                     };
 
+                    var options = {
+                        scale: {
+                            ticks: {
+                                beginAtZero: true,
+                                max: 100
+                            }
+                        }
+                    };
+
                     var radarChart = new Chart(marksCanvas, {
                       type: 'radar',
-                      data: marksData
+                      data: marksData,
+                      options: options
+
                     });
 
                 	</script>
