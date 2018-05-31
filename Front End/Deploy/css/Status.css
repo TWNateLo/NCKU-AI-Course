@@ -404,13 +404,12 @@ a.article, a.article:hover {
 
 /* --------------------   Exp    -------------------- */
 .level{
-    
+    font-size: 1em;
 }
 
 @media (min-width: 576px) {
   .level{
-      max-height: 10vh;
-      width: auto;
+      font-size: 1.5em;
   }
 }
 
