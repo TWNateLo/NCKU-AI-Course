@@ -348,6 +348,48 @@ a.article, a.article:hover {
   font-size: 0.8em;
 }
 
+.emotion-img{
+  margin-top: -5vh;
+  margin-left: 3vh;
+  width: 85%;
+}
+
+@media (min-width: 576px) {
+  .emotion-img{
+      margin-top: -5vh;
+      margin-left: 10vh;
+      max-height: 27vh;
+      width: auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .emotion-img{
+      margin-top: -5vh;
+      margin-left: 10vh;
+      max-height: 30vh;
+      width: auto;
+  }
+}
+
+@media (min-width: 992px) {
+  .emotion-img{
+      margin-top: -5vh;
+      margin-left: 12vh;
+      max-height: 33vh;
+      width: auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  .emotion-img{
+      margin-top: -5vh;
+      margin-left: 17vh;
+      max-height: 35vh;
+      width: auto;
+  }
+}
+
 /* --------------------   //Emotion    -------------------- */
 
 /* --------------------    Chick    -------------------- */
