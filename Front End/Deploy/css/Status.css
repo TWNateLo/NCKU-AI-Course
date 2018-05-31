@@ -11,9 +11,8 @@ body {
 
 p {
     font-family: 'Poppins', sans-serif;
-    font-size: 1.1em;
+    font-size: 1em;
     font-weight: 300;
-    line-height: 1.7em;
     color: #ffffff;
 }
 
@@ -402,3 +401,21 @@ a.article, a.article:hover {
 
 }
 /* --------------------   //textbox    -------------------- */
+
+/* --------------------   Exp    -------------------- */
+.level{
+    
+}
+
+@media (min-width: 576px) {
+  .level{
+      max-height: 10vh;
+      width: auto;
+  }
+}
+
+.progress-label {
+    float: left;
+    margin-right: 0.5em;
+}
+/* --------------------   //Exp    -------------------- */

@@ -151,7 +151,22 @@
 <!------------------------ CONTENT --------------------->
 <!------------------------------------------------------>
 
-                <!-- Weather & Emotion (Together in one parallel row for now) -->
+                <!-- Level and Exp -->
+                <div class="container-fluid">
+                  <div class="row align-items-center div-width">
+                    <div class="col-3" style="padding: 0px; text-align: center;">
+                      <p class="level">Level: <span>53</span></p>
+                    </div>
+                    <div class="col-9" style="padding-right: 0px;">
+                      <p class="progress-label">Exp:</p>
+                      <div class="progress" style="height:2em;">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-info" style="width:40%; height:2em;">40%</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Category and Chick-->
                 <div class="container-fluid">
                   <div class="row align-items-center div-width">
                     <div class="col-6" style="background-color:rgba(27, 207, 115, 0.69);">
@@ -168,7 +183,7 @@
                 </div>
 
 
-                <!-- Chcik -->
+                <!-- Radar Chart -->
                 <div class="container-fluid" style="max-width: 600px; margin-top: 3vh;">
                     <div class="col">
                       <canvas id="marksChart" width="600" height="400"></canvas>
