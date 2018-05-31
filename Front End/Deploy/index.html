@@ -165,16 +165,8 @@
 
                     </div>
                     <div class="col" style="background-color:rgba(61, 217, 184, 0.56); padding:0px; max-height:70px;">
-                    <!-- How to use Font Awesome in the p tag  -->
-                    <!--
-                         http://jsfiddle.net/allcaps/gA4rx/
-                         https://stackoverflow.com/questions/19285640/font-awesome-icon-inside-text-input-element
-                    -->
-                      <img class="emotion-img d-block" src="./image/Happy.svg" alt="emotion"/>
 
-                      <!--
-                      <i id="SmileOrFrown"></i>
-
+                      <img id="SmileOrFrown" class="emotion-img d-block" alt="emotion"/>
                       <?php
                             //check Submit value
                             if ($_SERVER['REQUEST_METHOD'] === 'POST'){
@@ -183,18 +175,11 @@
                             //execute python
                             $result = shell_exec("python NLP_V2.py $email $sentence");
                             // echo $result;
-                            if($result ==1)echo '<script>  document.getElementById("SmileOrFrown").className = "far fa-smile";</script>';
-                            else echo '<script>  document.getElementById("SmileOrFrown").className = "far fa-frown";</script>';
+                            if($result ==1)echo '<script>  document.getElementById("SmileOrFrown").src="./image/Happy.svg" </script>';
+                            else echo '<script>  document.getElementById("SmileOrFrown"). src="./image/Happy.svg"</script>';
                         }
                       ?>
-                      -->
-                      <!-- P tag unicode version of FA icons -->
-                      <!--
-                      <p class="emotion emotion-icon">&#xf118;</p>
-                      <p class="emotion emotion-icon">&#xf119;</p>
-                      -->
-                      <!-- additional-styling -->
-                      <!-- https://fontawesome.com/how-to-use/web-fonts-with-css#additional-styling -->
+
                     </div>
                   </div>
 
