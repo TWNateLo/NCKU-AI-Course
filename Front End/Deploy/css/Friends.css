@@ -320,96 +320,23 @@ a.article, a.article:hover {
     max-width: 600px;
     margin: 0 auto;
 }
-
-.emotion{
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.1em;
-    font-weight: 300;
-    line-height: 1.7em;
-    color: #000000;
-    margin: 0px;
-}
-
-.emotion-icon{
-  /*content: '\f0d7';*/
-  /*content: '\f13a';*/
-  /* >> Name of the FA free font (mandatory)
-             - 'Font Awesome 5 Free' for Regular and Solid symbols;
-             - 'Font Awesome 5 Brand' for Brands symbols. */
-  font-family: 'Font Awesome 5 Free';
-  /* >> Weight of the font (mandatory)
-             - 400 for Regular and Brands symbols;
-             - 900 for Solid symbols. */
-  font-weight: 900;
-  /* >> Optional styling: */
-  /*font-family: 'Glyphicons Halflings';*/
-  font-family: 'Font Awesome 5 Free';
-  font-size: 0.8em;
-}
-
 /* --------------------   //Emotion    -------------------- */
 
-/* --------------------   Category    -------------------- */
-.bottomright {
-    position: absolute;
-    bottom: 8px;
-    right: 16px;
-    font-size: 18px;
-}
-/* --------------------   //Category    -------------------- */
 
-/* --------------------    Chick    -------------------- */
 
-.chick{
-    margin: 15px 15px 15px 15px;
-    width: 90%;
+/* --------------------    card thingy    -------------------- */
+
+.card-custom{
+    padding:0.5rem 1rem 1rem 1rem;
+    text-align: center;
 }
 
-@media (min-width: 576px) {
-  .chick{
-      max-height: 10vh;
-      width: auto;
-  }
+.card-text-color{
+    font-weight: bold;
+    color: rgba(0, 128, 200, 0.75);
 }
 
-@media (min-width: 768px) {
-  .chick{
-      max-height: 15vh;
-      width: auto;
-  }
-}
-
-@media (min-width: 992px) {
-  .chick{
-      max-height: 20vh;
-      width: auto;
-  }
-}
-
-@media (min-width: 1200px) {
-  .chick{
-      max-height: 30vh;
-      width: auto;
-  }
-}
-
-/*
-.chickt{
-  display: block;
-  max-height: 60vh;
-  width: auto;
-}
-*/
-
-/* --------------------   //Chick    -------------------- */
-
-/* --------------------    textbox    -------------------- */
-.Category{
-
-    font-size: 8em;
-
-}
-/* --------------------   //textbox    -------------------- */
+/* --------------------   //card thingy    -------------------- */
 
 /* --------------------   Exp    -------------------- */
 .level{
