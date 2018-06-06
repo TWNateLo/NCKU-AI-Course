@@ -392,6 +392,31 @@ a.article, a.article:hover {
 
 /* --------------------   //Emotion    -------------------- */
 
+/**/
+.Dialogue{
+  /*Padding 15, 10 is moved to nav btn as margin, for the sake of less logo padding*/
+  padding: auto;
+  background: #7FCDE2;
+  /*border: none;*/
+  border: 3px solid #fff;
+  border-radius: 10px;
+  /*margin: 15px 15px 15px 15px;*/
+  /*margin-bottom: 15px;*/
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  vertical-align: middle;
+  height:80px;
+}
+
+.centering-p{
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+/**/
+
 /* --------------------    Chick    -------------------- */
 
 .chick{
